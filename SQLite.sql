@@ -10,3 +10,4 @@ CREATE TABLE Compras (
     NomeLivro VARCHAR(255) NOT NULL,
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
+SELECT * FROM Clientes;
