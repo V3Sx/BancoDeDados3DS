@@ -11,3 +11,6 @@ CREATE TABLE Compras (
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
 SELECT * FROM Clientes;
+SELECT Clientes.nomeCliente, Compras.NomeLivro
+FROM Compras
+INNER JOIN Clientes ON Compras.ClienteID = Clientes.ID;
